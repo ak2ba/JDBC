@@ -27,10 +27,10 @@ public class Program1 {
 			//process the result
 			while(rs.next())
 			{
-				int sid = rs.getInt(1);
-				String sname = rs.getString(2);
-				String email = rs.getString(3);
-				int mobile = rs.getInt(4);
+				int sid = rs.getInt("sid");
+				String sname = rs.getString("sname");
+				String email = rs.getString("email");
+				int mobile = rs.getInt("mobile");
 
 				System.out.println(sid+"   "+sname+"   "+email+"   "+mobile);
 			}
